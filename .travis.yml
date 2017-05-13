@@ -12,8 +12,8 @@ services:
 env:
   matrix:
     - DB=mysql DATABASE_TEST_URL='mysql://root:password@127.0.0.1/cakephp_test'
-    - DB=pgsql db_dsn='postgres://travis@127.0.0.1/cakephp_test'
-    - DB=sqlite db_dsn='sqlite:///:memory:'
+    - DB=pgsql DATABASE_TEST_URL='postgres://travis@127.0.0.1/cakephp_test'
+    - DB=sqlite DATABASE_TEST_URL='sqlite:///:memory:'
 
 matrix:
   fast_finish: true
